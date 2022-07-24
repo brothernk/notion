@@ -1,0 +1,16 @@
+:root {
+  --color-white: #fbf4ef;
+  --color-beige: #f3dece;
+  --color-tan: #e1b38e;
+  --color-accent-light: #b35342;
+  --color-accent-dark: #a53f2b;
+  --color-black: #1a1d23;
+}
+
+html,
+body,
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
