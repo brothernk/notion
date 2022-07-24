@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
 :root {
   --color-white: #fbf4ef;
   --color-beige: #f3dece;
@@ -13,4 +15,39 @@ body,
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.swatch {
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .15s;
+}
+
+.swatch:hover p {
+    display: block;
+}
+
+.swatch p {
+    font-size: 12px;
+    display: none;
+}
+
+.swatch--white {background-color: var(--color-white);}
+.swatch--beige {background-color: var(--color-beige);}
+.swatch--tan {background-color: var(--color-tan);}
+.swatch--accent-light {background-color: var(--color-accent-light);}
+.swatch--accent-dark {background-color: var(--color-accent-dark);}
+.swatch--black {background-color: var(--color-black);}
+
+.swatch--accent-light,
+.swatch--accent-dark,
+.swatch--black {
+    color: var(--color-white);
 }
